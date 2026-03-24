@@ -25,10 +25,10 @@ even with the same prompt and setup.
 Same prompt. Same setup.
 
 ### Valid (PASS)
-![Valid Character](./images/valid.png)
+![Valid Character](./images/valid.PNG)
 
 ### Invalid (FAIL)
-![Invalid Character](./images/invalid.png)
+![Invalid Character](./images/invalid.PNG)
 
 Looks similar.  
 But not the same character.
