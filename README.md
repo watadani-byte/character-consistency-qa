@@ -36,7 +36,7 @@ validate each output and discard inconsistent results.
 
 Simple rule:
 
-→ If identity deviates, discard and regenerate.
+→ If the character deviates, discard and regenerate.
 
 ---
 
@@ -67,6 +67,7 @@ Current approaches focus on improving generation quality.
 However, in production:
 
 → Even small inconsistencies cause real cost
+→ Inconsistent outputs cannot be used in production.
 
 This workflow shifts the focus:
 
@@ -86,6 +87,6 @@ This is a **quality control layer for character consistency**.
 ## Summary
 
 - Simple rule: **If it drifts, discard it**
-- No additional cost
+- No additional cost or model changes
 - Works with existing workflows
 - Improves consistency and reduces production loss
