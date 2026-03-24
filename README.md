@@ -122,3 +122,7 @@ This is a **quality control layer for character consistency**.
 ## Contact
 
 For business inquiries, please open an Issue using the "Business Inquiry" template.
+
+## License
+
+MIT License. See LICENSE file for details.
