@@ -1,19 +1,29 @@
-Character inconsistency is a common issue in AI-generated images.
+Problem
 
-Even with the same prompt and setup, characters often drift across iterations.
-This leads to rework, inconsistency, and production inefficiency.
+In IP-based production, character consistency is critical.
 
-This repository introduces a simple workflow:
+Even small deviations can break brand integrity,
+cause rework, and disrupt production workflows.
 
-→ If identity deviates, discard immediately.
+AI-generated images often introduce subtle inconsistencies:
+- Characters appear as different individuals
+- Appearance shifts across scenes
+- Quality checks become subjective and unreliable
 
-Instead of trying to generate the perfect image,
-we validate each output and only keep consistent results.
+Solution
 
-Benefits:
-- Reduced rework
-- Stable character identity
-- Consistent outputs across sequences
+Instead of trying to generate perfect outputs,
+we introduce a simple validation rule:
+
+→ If character identity deviates, discard immediately.
+
+This ensures that only consistent outputs are used in production.
+
+Result
+
+- Preserved character identity across sequences
+- Reduced rework and manual correction
+- Reliable quality control for IP-based workflows
 
 No model changes required.
 No additional training needed.
