@@ -10,13 +10,30 @@ In IP-based production, character consistency is critical.
 
 Even small deviations can:
 
-- Break continuity across scenes
-- Damage brand integrity
-- Increase manual correction and rework
-- Slow down production workflows
+- Break continuity across scenes  
+- Damage brand integrity  
+- Increase manual correction and rework  
+- Slow down production workflows  
 
 AI-generated images often introduce subtle inconsistencies,
 even with the same prompt and setup.
+
+---
+
+## Example
+
+Same prompt. Same setup.
+
+### Valid (PASS)
+![Valid Character](./images/valid.png)
+
+### Invalid (FAIL)
+![Invalid Character](./images/invalid.png)
+
+Looks similar.  
+But not the same character.
+
+→ Cannot be used in production.
 
 ---
 
@@ -42,19 +59,28 @@ Simple rule:
 
 ## Result
 
-- Stable character identity across outputs
-- Reduced rework and manual correction
-- Consistent production workflow
-- No additional model changes required
+- Stable character identity across outputs  
+- Reduced rework and manual correction  
+- Consistent production workflow  
+- No additional model changes required  
+
+---
+
+## Business Value
+
+- Reduce reliance on external vendors and lower costs  
+- Maintain full control over character quality in-house  
+- Eliminate dependency on individual expertise  
+- Enable stable and repeatable production  
 
 ---
 
 ## How to Use
 
-1. Generate multiple candidates
-2. Check character consistency
-3. Discard inconsistent outputs
-4. Keep only valid results
+1. Generate multiple candidates  
+2. Check character consistency  
+3. Discard inconsistent outputs  
+4. Keep only valid results  
 
 Repeat until stable outputs are obtained.
 
@@ -66,8 +92,8 @@ Current approaches focus on improving generation quality.
 
 However, in production:
 
-→ Even small inconsistencies cause real cost
-→ Inconsistent outputs cannot be used in production.
+→ Even small inconsistencies cause real cost  
+→ Inconsistent outputs cannot be used in production  
 
 This workflow shifts the focus:
 
@@ -86,7 +112,13 @@ This is a **quality control layer for character consistency**.
 
 ## Summary
 
-- Simple rule: **If it drifts, discard it**
-- No additional cost or model changes
-- Works with existing workflows
-- Improves consistency and reduces production loss
+- Simple rule: **If it drifts, discard it**  
+- No additional cost or model changes  
+- Works with existing workflows  
+- Improves consistency and reduces production loss  
+
+---
+
+## Contact
+
+For business inquiries, please open an Issue using the "Business Inquiry" template.
