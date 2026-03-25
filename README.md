@@ -49,15 +49,11 @@ It is distance from the anchor.
 
 ---
 
-## Example
-
-Same prompt. Same setup.
-
 ### Valid (PASS)
-Valid Character
+![Valid Character](./images/valid.PNG)
 
 ### Invalid (FAIL)
-Invalid Character
+![Invalid Character](./images/invalid.PNG)
 
 Looks similar.  
 But not the same character.
