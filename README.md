@@ -11,14 +11,14 @@ Consistent characters accelerate production.
 
 In IP-based production, character consistency is critical.
 
-Even small deviations can:
+Even small deviations:
 
 - Break continuity across scenes  
 - Damage brand integrity  
 - Increase manual correction and rework  
 - Slow down production workflows  
 
-AI-generated images often introduce subtle inconsistencies,  
+AI-generated images introduce subtle inconsistencies,  
 even with the same prompt and setup.
 
 > More generations do not stabilize identity.  
@@ -47,15 +47,17 @@ It is distance from the anchor.
 
 → No anchor = No identity
 
+---
+
 ## Example
 
 Same prompt. Same setup.
 
 ### Valid (PASS)
-![Valid Character](./images/valid.PNG)
+Valid Character
 
 ### Invalid (FAIL)
-![Invalid Character](./images/invalid.PNG)
+Invalid Character
 
 Looks similar.  
 But not the same character.
@@ -128,7 +130,7 @@ High per-image similarity does not guarantee identity consistency.
 Consistency is not a generation problem.  
 It is a validation problem.
 
-If the character drifts, it is not usable.
+If it drifts, it is not usable.
 
 ---
 
@@ -223,6 +225,8 @@ They make it worse.
 - Cost increases  
 - Identity diverges  
 - Consistency collapses  
+
+→ Generation scales risk, not stability.
 
 ---
 
