@@ -143,7 +143,7 @@ High per-image similarity does not guarantee identity consistency.
 Consistency is not a generation problem.  
 It is a validation problem.
 
-If it drifts, it is not usable.
+If it drifts, discard it.
 
 ---
 
