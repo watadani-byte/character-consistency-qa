@@ -47,7 +47,13 @@ It is distance from the anchor.
 
 → No anchor = No identity
 
+The following examples show how this anchor is evaluated in practice.
+
 ---
+
+## Example
+
+Same prompt. Same setup.
 
 ### Valid (PASS)
 ![Valid Character](./images/valid.PNG)
