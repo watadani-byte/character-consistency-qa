@@ -75,6 +75,8 @@ Below is the operational structure of the QA pipeline:
 If it fails, it is not fixed.  
 It is rejected.
 
+This is a governance decision.
+
 This pipeline treats every generated output as a candidate, not a final result.
 
 Only outputs that pass all identity gates are accepted.  
