@@ -1,5 +1,8 @@
 # Character Consistency QA Pipeline
 
+> Generation does not stabilize identity.  
+> It amplifies drift.
+
 Consistent characters accelerate production.
 
 ---
@@ -15,7 +18,7 @@ Even small deviations can:
 - Increase manual correction and rework  
 - Slow down production workflows  
 
-AI-generated images often introduce subtle inconsistencies,
+AI-generated images often introduce subtle inconsistencies,  
 even with the same prompt and setup.
 
 ---
@@ -25,10 +28,10 @@ even with the same prompt and setup.
 Same prompt. Same setup.
 
 ### Valid (PASS)
-![Valid Character](./images/valid.PNG)
+Valid Character
 
 ### Invalid (FAIL)
-![Invalid Character](./images/invalid.PNG)
+Invalid Character
 
 Looks similar.  
 But not the same character.
@@ -52,21 +55,60 @@ A → (A + C) → A′ → B′
 
 ---
 
+## Cumulative Identity Drift
+
+<p align="center">
+  <img src="./images/cumulative_drift.PNG" width="700">
+</p>
+
+Even when each generated image appears correct, identity drift accumulates across generations.
+
+This is not a time-based issue.  
+It is a generation-based phenomenon.
+
+> Each generation introduces a small deviation.
+
+---
+
+### Core Principle
+
+> The more you generate, the more you drift.
+
+---
+
+### Identity Collapse
+
+Small deviations per image accumulate over repeated generations.
+
+→ Eventually, the character is no longer the same identity.
+
+---
+
+### Critical Insight
+
+High per-image similarity does not guarantee identity consistency.
+
+> Consistency per image ≠ Consistency across generations
+
+---
+
+### Operational Reality
+
+> Generating more does not stabilize identity.  
+> It increases both cost and divergence.
+
+---
+
 ## Mindset
 
 Consistency is not a generation problem.  
 It is a validation problem.
 
-**If the character drifts, it is not usable.**
+If the character drifts, it is not usable.
 
 ---
 
 ## Validation Pipeline
-
-Consistency is not a generation problem.  
-It is a validation problem.
-
-Below is the operational structure of the QA pipeline:
 
 <p align="center">
   <img src="./images/cip_pipeline.PNG" width="750">
@@ -76,11 +118,6 @@ If it fails, it is not fixed.
 It is rejected.
 
 This is a governance decision.
-
-This pipeline treats every generated output as a candidate, not a final result.
-
-Only outputs that pass all identity gates are accepted.  
-All others are rejected.
 
 ---
 
@@ -93,8 +130,6 @@ treat generation as a search process.
 2. Validate identity  
 3. Reject inconsistent outputs  
 
-Simple rule:
-
 → If the character deviates, discard it.
 
 ---
@@ -103,12 +138,10 @@ Simple rule:
 
 Discarding is not a workaround.
 
-It is a **governance decision**.
+It is a governance decision.
 
 - Inconsistent outputs are not “almost correct”  
-- They are **invalid states**
-
-→ The system must explicitly reject them
+- They are invalid states
 
 ---
 
@@ -118,106 +151,81 @@ Character consistency is achieved through repetition:
 
 1. Generate  
 2. Validate  
-3. Reject (if needed)  
+3. Reject  
 4. Regenerate  
 
-This forms a **controlled convergence loop**
-
 → Identity is not generated  
-→ It is **recovered through iteration**
+→ It is recovered
 
 ---
 
 ## Traceability (Audit Layer)
 
-In production environments, validation alone is not sufficient.
-
-Each generation cycle can be logged and analyzed:
+Each generation cycle can be logged:
 
 - Input prompt (A)  
 - Internal transformation (A′)  
 - Generated output (B′)  
 - Validation result (PASS / FAIL)  
 
-This enables:
-
-- Failure pattern analysis  
-- Reproducibility of successful outputs  
-- Auditability for enterprise workflows  
-
-→ Character identity becomes not only controllable,  
-   but also **traceable and explainable**
+→ Identity becomes traceable and explainable
 
 ---
 
 ## Result
 
-- Stable character identity across outputs  
-- Reduced rework and manual correction  
-- Consistent production workflow  
-- No additional model changes required  
+- Stable character identity  
+- Reduced rework  
+- Consistent workflow  
+- No model modification required  
 
 ---
 
 ## Business Value
 
-- Reduce reliance on external vendors and lower costs  
-- Maintain full control over character quality in-house  
-- Eliminate dependency on individual expertise  
-- Enable stable and repeatable production  
+- Lower production cost  
+- Reduced correction workload  
+- Consistent brand output  
+- Scalable production pipeline  
 
 ---
 
-## How to Use
+## Why This Matters
 
-1. Generate multiple candidates  
-2. Check character consistency  
-3. Discard inconsistent outputs  
-4. Keep only valid results  
+> More generations do not solve the problem.
 
-Repeat until stable outputs are obtained.
+They make it worse.
 
----
-
-## Why This Works
-
-Most approaches try to improve generation quality.
-
-However, in production:
-
-→ Even small inconsistencies create real cost  
-→ Inconsistent outputs cannot be used  
-
-This workflow shifts the focus:
-
-**From generation → to validation → to recovery**
+- Cost increases  
+- Identity diverges  
+- Consistency collapses  
 
 ---
 
 ## Positioning
 
 This is not a prompt technique.  
-This is not a model change.
+This is not a model improvement.
 
-This is a **quality control and recovery layer for character identity**.
+This is a quality control and identity recovery system.
 
 ---
 
 ## Summary
 
-- Simple rule: **If it drifts, discard it**  
-- Drift is caused by internal reconstruction (A′)  
-- Consistency is achieved through validation loops  
-- Identity is recovered, not generated  
+- If it drifts, discard it  
+- Drift accumulates across generations  
+- Identity collapses beyond a threshold  
+- Consistency is achieved through validation  
 
 ---
 
 ## Contact
 
-For business inquiries, please open an Issue using the "Business Inquiry" template.
+For business inquiries, open an Issue using the template.
 
 ---
 
 ## License
 
-MIT License. See LICENSE file for details.
+MIT License
