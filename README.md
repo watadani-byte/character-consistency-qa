@@ -72,6 +72,9 @@ Below is the operational structure of the QA pipeline:
   <img src="./images/cip_pipeline.PNG" width="750">
 </p>
 
+If it fails, it is not fixed.  
+It is rejected.
+
 This pipeline treats every generated output as a candidate, not a final result.
 
 Only outputs that pass all identity gates are accepted.  
