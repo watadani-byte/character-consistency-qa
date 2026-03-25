@@ -110,6 +110,26 @@ Small deviations per image accumulate over repeated generations.
 
 → Eventually, the character is no longer the same identity.
 
+### Irreversibility
+
+Once identity has diverged beyond a threshold,  
+it cannot be reliably restored through further generation.
+
+Additional generations do not converge identity.  
+They introduce new variations.
+
+→ More attempts do not recover identity  
+→ They compound divergence
+
+This is why:
+
+- Repeated generation does not fix drift  
+- Manual correction becomes necessary  
+- Production cost increases over time
+
+→ Identity loss is not temporary  
+→ It is cumulative and difficult to reverse
+
 ---
 
 ### Critical Insight
