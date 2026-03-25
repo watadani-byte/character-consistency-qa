@@ -68,7 +68,7 @@ It is a validation problem.
 
 Below is the operational structure of the QA pipeline:
 
-![Character Consistency QA Pipeline](./images/cip_pipeline.png)
+![Character Consistency QA Pipeline](./images/cip_pipeline.PNG)
 
 This pipeline treats every generated output as a candidate, not a final result.
 
