@@ -92,6 +92,8 @@ not a final result.
 Only outputs that pass all identity gates are accepted.  
 All others are rejected.
 
+![Character Consistency QA Pipeline](./images/cip_pipeline.PNG)
+
 ---
 
 ## Workflow
