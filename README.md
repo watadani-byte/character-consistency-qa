@@ -63,36 +63,17 @@ It is a validation problem.
 
 ## Validation Pipeline
 
-Consistency is not achieved during generation.  
-It is enforced through validation.
+Consistency is not a generation problem.  
+It is a validation problem.
 
 Below is the operational structure of the QA pipeline:
 
-```mermaid
-flowchart TD
-    A[Anchor / Reference] --> B[Generate (Any Model)]
-    B --> C[Validate]
+![Character Consistency QA Pipeline](./images/cip_pipeline.png)
 
-    C --> D{All Identity Gates Pass?}
-
-    D -->|YES| E[ACCEPT]
-    D -->|NO| F[REJECT]
-
-    F --> G[Rebind to Anchor]
-    G --> B
-
-    C --> C1[Face Gate]
-    C --> C2[Skeleton Gate]
-    C --> C3[Proportion Gate]
-```
-
-This pipeline treats every generated output as a candidate,  
-not a final result.
+This pipeline treats every generated output as a candidate, not a final result.
 
 Only outputs that pass all identity gates are accepted.  
 All others are rejected.
-
-![Character Consistency QA Pipeline](./images/cip_pipeline.PNG)
 
 ---
 
