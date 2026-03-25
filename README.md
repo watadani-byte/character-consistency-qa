@@ -23,6 +23,27 @@ even with the same prompt and setup.
 
 ---
 
+## Anchor Definition
+
+<p align="center">
+  <img src="./images/valid.PNG" width="400">
+  <img src="./images/invalid.PNG" width="400">
+</p>
+
+Character identity must be defined before it can be validated.
+
+The anchor represents the reference identity:
+
+- Face structure  
+- Hair shape and volume  
+- Body proportions  
+- Key visual features  
+
+Consistency is not similarity.  
+It is distance from the anchor.
+
+→ No anchor = No identity
+
 ## Example
 
 Same prompt. Same setup.
