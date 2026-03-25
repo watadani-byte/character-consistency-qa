@@ -61,116 +61,144 @@ It is a validation problem.
 
 ---
 
-## Workflow
+## Validation Pipeline
+
+Consistency is not achieved during generation.  
+It is enforced through validation.
+
+Below is the operational structure of the QA pipeline:
+
+```mermaid
+flowchart TD
+    A[Anchor / Reference] --> B[Generate (Any Model)]
+    B --> C[Validate]
+
+    C -->|Face OK| D1
+    C -->|Skeleton OK| D2
+    C -->|Proportion OK| D3
+
+    D1 --> E{All Gates Pass?}
+    D2 --> E
+    D3 --> E
+
+    E -->|YES| F[ACCEPT]
+    E -->|NO| G[REJECT]
+
+    G --> H[Rebind to Anchor]
+    H --> B
+    
+    This pipeline treats every generated output as a candidate,
+not a final result.
+
+Only outputs that pass all identity gates are accepted.
+
+All others are rejected.
+
+⸻
+
+Workflow
 
 Instead of trying to generate the perfect image,
 treat generation as a search process.
-
-1. Generate candidates  
-2. Validate identity  
-3. Reject inconsistent outputs  
+	1.	Generate candidates
+	2.	Validate identity
+	3.	Reject inconsistent outputs
 
 Simple rule:
 
 → If the character deviates, discard it.
 
----
+⸻
 
-## Important Clarification
+Important Clarification
 
 Discarding is not a workaround.
 
-It is a **governance decision**.
-
-- Inconsistent outputs are not “almost correct”  
-- They are **invalid states**
+It is a governance decision.
+	•	Inconsistent outputs are not “almost correct”
+	•	They are invalid states
 
 → The system must explicitly reject them
 
----
+⸻
 
-## Recovery Loop
+Recovery Loop
 
 Character consistency is achieved through repetition:
+	1.	Generate
+	2.	Validate
+	3.	Reject (if needed)
+	4.	Regenerate
 
-1. Generate  
-2. Validate  
-3. Reject (if needed)  
-4. Regenerate  
+This forms a controlled convergence loop
 
-This forms a **controlled convergence loop**
+→ Identity is not generated
+→ It is recovered through iteration
 
-→ Identity is not generated  
-→ It is **recovered through iteration**
+⸻
 
----
+Result
+	•	Stable character identity across outputs
+	•	Reduced rework and manual correction
+	•	Consistent production workflow
+	•	No additional model changes required
 
-## Result
+⸻
 
-- Stable character identity across outputs  
-- Reduced rework and manual correction  
-- Consistent production workflow  
-- No additional model changes required  
+Business Value
+	•	Reduce reliance on external vendors and lower costs
+	•	Maintain full control over character quality in-house
+	•	Eliminate dependency on individual expertise
+	•	Enable stable and repeatable production
 
----
+⸻
 
-## Business Value
-
-- Reduce reliance on external vendors and lower costs  
-- Maintain full control over character quality in-house  
-- Eliminate dependency on individual expertise  
-- Enable stable and repeatable production  
-
----
-
-## How to Use
-
-1. Generate multiple candidates  
-2. Check character consistency  
-3. Discard inconsistent outputs  
-4. Keep only valid results  
+How to Use
+	1.	Generate multiple candidates
+	2.	Check character consistency
+	3.	Discard inconsistent outputs
+	4.	Keep only valid results
 
 Repeat until stable outputs are obtained.
 
----
+⸻
 
-## Why This Works
+Why This Works
 
 Most approaches try to improve generation quality.
 
 However, in production:
 
-→ Even small inconsistencies create real cost  
-→ Inconsistent outputs cannot be used  
+→ Even small inconsistencies create real cost
+→ Inconsistent outputs cannot be used
 
 This workflow shifts the focus:
 
-**From generation → to validation → to recovery**
+From generation → to validation → to recovery
 
----
+⸻
 
-## Positioning
+Positioning
 
-This is not a prompt technique.  
+This is not a prompt technique.
 This is not a model change.
 
-This is a **quality control and recovery layer for character identity**.
+This is a quality control and recovery layer for character identity.
 
----
+⸻
 
-## Summary
+Summary
+	•	Simple rule: If it drifts, discard it
+	•	Drift is caused by internal reconstruction (A′)
+	•	Consistency is achieved through validation loops
+	•	Identity is recovered, not generated
 
-- Simple rule: **If it drifts, discard it**  
-- Drift is caused by internal reconstruction (A′)  
-- Consistency is achieved through validation loops  
-- Identity is recovered, not generated  
+⸻
 
----
+Contact
 
-## Contact
+For business inquiries, please open an Issue using the “Business Inquiry” template.
 
-For business inquiries, please open an Issue using the "Business Inquiry" template.
-
-## License
+License
 
 MIT License. See LICENSE file for details.
