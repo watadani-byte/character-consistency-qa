@@ -21,6 +21,9 @@ Even small deviations can:
 AI-generated images often introduce subtle inconsistencies,  
 even with the same prompt and setup.
 
+> More generations do not stabilize identity.  
+> They amplify drift and increase risk.
+
 ---
 
 ## Anchor Definition
