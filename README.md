@@ -89,6 +89,56 @@ They redefine it — from conceptual drift to numerical drift.
 
 Validation remains the final arbiter of identity.
 
+## The Gravity of Training Data
+
+AI does not create freely.  
+It is constrained by the statistical structure of its training data.
+
+During internal restructuring (A′), the strongest force acting on the system is:
+
+→ The high-density regions of the training distribution
+
+This leads to a natural tendency:
+
+→ Regression toward familiar, frequently observed patterns
+
+---
+
+### Identity Drift as Regression
+
+Identity drift is not random.
+
+It is a structural effect:
+
+→ Unique features are gradually pulled toward the mean of the distribution
+
+- Uncommon hairstyles become more typical  
+- Distinct proportions normalize  
+- Unique traits collapse into familiar archetypes  
+
+→ The character is absorbed into the "average"
+
+---
+
+### Implication
+
+> Drift is not failure.  
+> It is convergence — to the wrong target.
+
+---
+
+### Strategy
+
+Do not fight the model.
+
+Align the anchor with high-density regions of the training data.
+
+- Quality is not generated  
+- It is located within the latent space  
+
+→ Generation is not creation  
+→ It is navigation
+
 ---
 
 ## Cumulative Identity Drift
