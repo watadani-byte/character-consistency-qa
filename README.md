@@ -81,6 +81,15 @@ A → (A + C) → A′ → B′
 
 → Even identical prompts can produce different characters
 
+Even with structured inputs (JSON / numerical constraints), identity is not guaranteed.
+
+Numerical precision does not equal pixel-level determinism.
+
+Structured inputs do not eliminate drift.
+They redefine it.
+
+Validation remains the final arbiter of identity.
+
 ---
 
 ## Cumulative Identity Drift
