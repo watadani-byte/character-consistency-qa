@@ -85,8 +85,7 @@ Even with structured inputs (JSON / numerical constraints), identity is not guar
 
 Numerical precision does not equal pixel-level determinism.
 
-Structured inputs do not eliminate drift.
-They redefine it.
+They redefine it — from conceptual drift to numerical drift.
 
 Validation remains the final arbiter of identity.
 
